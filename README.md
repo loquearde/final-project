@@ -30,4 +30,4 @@ https://trello.com/b/lmqyGbvH/final-project-ironhack
 
 ## Martes 6 de diciembre
 
-Todavía estoy en la fase de preparación del proyecto, tengo que organizar cómo voy a trabajar y empezar a decidir un orden lógico para ir ejecutando el trabajo. Empezaré por trabajar el HTML y el CSS del Sign Up y Sign In.
+Todavía estoy en la fase de preparación del proyecto, tengo que organizar cómo voy a trabajar y empezar a decidir un orden lógico para ir ejecutando el trabajo. Empezaré por trabajar el HTML y el CSS del Sign Up y Sign In. Una vez he preparado todo el HTML y el CSS del Sign Up y Sign In, he comenzado a trabajar en la lógica. Por la tarde, he podido empezar a trabajar en la lógica de las tasks junto con otros compañeros.
