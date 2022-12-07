@@ -34,7 +34,7 @@
           />
         </div>
 
-        <button class="button" type="submit">Sign In</button>
+        <button class="button centered-button" type="submit">Sign In</button>
         <p>
           Dont have an account yet?
           <PersonalRouter
