@@ -34,4 +34,4 @@ Todavía estoy en la fase de preparación del proyecto, tengo que organizar cóm
 
 ## Miércoles 7 de diciembre
 
-Ayer avanzamos significativamente desarrollando la lógica de NewTask y TaskItem, así como creando en task.js las nuevas funciones. Hoy me he propuesto sacar adelante la lógica que me falta en el resto del proyecto (todavía pendiente la asíncrona de Sign In) y empezar a darle forma al CSS de las principales páginas.
+Ayer avanzamos significativamente desarrollando la lógica de NewTask y TaskItem, así como creando en task.js las nuevas funciones. Hoy me he propuesto sacar adelante la lógica que me falta en el resto del proyecto (todavía pendiente la asíncrona de Sign In) y empezar a darle forma al CSS de las principales páginas. Hoy ya hemos terminado la lógica para poder marcar tasks como completadas y que se comunique correctamente a la base de datos.

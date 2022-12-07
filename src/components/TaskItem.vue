@@ -1,7 +1,11 @@
 <template>
   <div class="container">
-    <h3>{{ task.title }}</h3>
-    <p>{{ task.description }}</p>
+    <h3 v-bind:class="task.is_complete ? 'completed' : 'not-completed'">
+      {{ task.title }}
+    </h3>
+    <p v-bind:class="task.is_complete ? 'completed' : 'not-completed'">
+      {{ task.description }}
+    </p>
     <button @click="deleteTask">Delete {{ task.title }}</button>
     <button @click="editTaskFunction">Edit {{ task.title }}</button>
     <div v-show="editTask">
@@ -13,7 +17,7 @@
       />
       <button @click="changeTask">Save changes</button>
     </div>
-    <button @click="statusTask">Archive {{ task.title }}</button>
+    <button @click="statusTask">Task Completed</button>
   </div>
 </template>
 
@@ -24,7 +28,7 @@ import { supabase } from "../supabase";
 
 const taskStore = useTaskStore();
 
-const emit = defineEmits(["deleteTasksChild", "editTasksChild"]);
+const emit = defineEmits(["getTasks"]);
 const name = ref("");
 const description = ref("");
 
@@ -36,7 +40,7 @@ const props = defineProps({
 const deleteTask = async () => {
   await taskStore.deleteTask(props.task.id);
 
-  emit("deleteTasksChild");
+  emit("getTasks");
 };
 
 // Función para cambiar task
@@ -45,7 +49,7 @@ const changeTask = async () => {
   await taskStore.changeTask(name.value, description.value, props.task.id);
   editTask.value = false;
 
-  emit("editTasksChild");
+  emit("getTasks");
 };
 
 const editTask = ref(false);
@@ -55,20 +59,29 @@ const editTaskFunction = () => {
 
 // Función para archivar tasks
 
+// const isComplete = ref(props.task.is_complete);
+// const isCompleteFunction = () => {
+//   =.value = !isComplete.value;
+//   console.log(isComplete.value);
+// };
+
+// const changeStatus = async () => {
+//   await taskStore.changeStatus(props.task.id, isComplete.value);
+// };
+
 const statusTask = async () => {
-  await taskStore.booleanTask(is_complete.value, props.task.id);
-  archiveTask.value = false;
+  await taskStore.statusTask(!props.task.is_complete, props.task.id);
 
-  emit("archiveTaskChild");
-};
-
-const archiveTask = ref(false);
-const archiveTaskFunction = () => {
-  archiveTask.value = !archiveTask.value;
+  emit("getTasks");
 };
 </script>
 
-<style></style>
+<style>
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+</style>
 
 <!--
 **Hints**
