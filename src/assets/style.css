@@ -230,6 +230,31 @@ li {
   }
 }
 
+/* New Task */
+
+.input-field {
+  background-color: #f2d0a4;
+}
+
+input {
+  background-color: #f7f7ff;
+  border: 0.75px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.add-button {
+  margin-top: 40px;
+}
+
 /* Home view */
 
 /* Account View */

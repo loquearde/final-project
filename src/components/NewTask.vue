@@ -18,7 +18,9 @@
         v-model="description"
       />
     </div>
-    <button @click="addTask" class="button">Add</button>
+    <button @click="addTask" class="button centered-button add-button">
+      Add
+    </button>
   </div>
 </template>
 
