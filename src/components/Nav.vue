@@ -1,19 +1,16 @@
 <template>
-  <nav>
-    <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
-    <router-link to="/"> Home </router-link>
-
-    <ul>
-      <li>
-        <router-link to="/">Task Manager</router-link>
+  <nav class="navbar">
+    <router-link to="/" class="navbar-logo"></router-link>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <router-link to="/" class="nav-link">Task Manager</router-link>
       </li>
-
-      <li>
-        <router-link to="/account">Your Account</router-link>
+      <li class="nav-item">
+        <router-link to="/account">Account</router-link>
       </li>
     </ul>
 
-    <div>
+    <div class="hide">
       <ul>
         <li class="log-out-welcome">
           <p v-if="getUser">Welcome, {{ getUser.email }}</p>
@@ -22,6 +19,11 @@
           <button @click="signOut" class="button">Log out</button>
         </li>
       </ul>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
   </nav>
 </template>
@@ -64,7 +66,7 @@ const signOut = async () => {
 </script>
 
 <style>
-.navbar-img {
+/* .navbar-img {
   width: 90px;
 }
 
@@ -82,5 +84,5 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 </style>
