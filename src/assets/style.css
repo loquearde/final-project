@@ -234,6 +234,12 @@ li {
 
 .input-field {
   background-color: #f2d0a4;
+  display: flex;
+  justify-content: center;
+}
+
+.container-inputs {
+  max-height: 500px;
 }
 
 input {
@@ -241,7 +247,8 @@ input {
   border: 0.75px;
   padding: 10px;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
+  max-width: 450px;
 }
 
 h1 {
@@ -255,6 +262,56 @@ h1 {
   margin-top: 40px;
 }
 
+/* Task Item */
+
+.insert {
+  background-color: #9e5c3d;
+  border: 0.75px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 93%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 15px;
+  border: none;
+}
+
+.trash-button {
+  background-image: url(./images/trash-logo.png);
+}
+
+.edit-button {
+  background-image: url(./images/edit-logo.png);
+}
+
+.complete-button {
+  background-image: url(./images/check-logo.png);
+}
+
+.save-button {
+  background-image: url(./images/save-logo.png);
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
 /* Home view */
 
 /* Account View */

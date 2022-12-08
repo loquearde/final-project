@@ -1,23 +1,32 @@
 <template>
   <div class="container">
-    <h3 v-bind:class="task.is_complete ? 'completed' : 'not-completed'">
+    <h4
+      class="insert"
+      v-bind:class="task.is_complete ? 'completed' : 'not-completed'"
+    >
       {{ task.title }}
-    </h3>
-    <p v-bind:class="task.is_complete ? 'completed' : 'not-completed'">
+    </h4>
+    <br />
+    <p
+      class="insert"
+      v-bind:class="task.is_complete ? 'completed' : 'not-completed'"
+    >
       {{ task.description }}
     </p>
-    <button @click="deleteTask">Delete {{ task.title }}</button>
-    <button @click="editTaskFunction">Edit {{ task.title }}</button>
-    <div v-show="editTask">
-      <input type="text" placeholder="Change title" v-model="name" />
-      <input
-        type="text"
-        placeholder="Change description"
-        v-model="description"
-      />
-      <button @click="changeTask">Save changes</button>
+    <div class="action-buttons">
+      <button class="action-btn trash-button" @click="deleteTask"></button>
+      <button class="action-btn edit-button" @click="editTaskFunction"></button>
+      <div class="edit" v-show="editTask">
+        <input type="text" placeholder="Change title" v-model="name" />
+        <input
+          type="text"
+          placeholder="Change description"
+          v-model="description"
+        />
+        <button class="action-btn save-button" @click="changeTask"></button>
+      </div>
+      <button class="action-btn complete-button" @click="statusTask"></button>
     </div>
-    <button @click="statusTask">Task Completed</button>
   </div>
 </template>
 
