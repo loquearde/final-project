@@ -24,7 +24,7 @@
 }
 
 .hide {
-  visibility: hidden;
+  display: none;
 }
 
 /* SignIn and SignUp Components */
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  color: #545e75;
+  color: black;
   margin-bottom: 30px;
 }
 
@@ -56,7 +56,7 @@
   justify-content: center;
   font-size: 1.2rem;
   margin-bottom: 40px;
-  color: #c03221;
+  color: #464756;
 }
 
 .form-sign-in {
@@ -84,6 +84,13 @@
   border-radius: 5px;
 }
 
+.input-field-login {
+  background-color: #f7f7ff;
+  border: 0.75px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .button {
   height: 40px;
   width: 100px;
@@ -97,6 +104,15 @@
   /* margin-left: 25%;
   margin-right: 25%; */
   margin-bottom: 20px;
+}
+
+.log-out-button {
+  background-color: #c03221;
+  margin-top: 15px;
+}
+
+.log-out-button:active {
+  background-color: #b6382a !important;
 }
 
 .centered-button {
@@ -129,7 +145,7 @@ li {
 }
 
 .nav-item a {
-  color: #6b708d;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -147,7 +163,7 @@ li {
 .navbar-logo {
   width: 100px;
   height: 100px;
-  background-image: url(./images/logo.jpg);
+  background-image: url(./images/logo.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -230,6 +246,23 @@ li {
   }
 }
 
+@media (min-width: 768px) {
+  .hide {
+    display: block;
+  }
+  .hide ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .log-out {
+    margin-top: 3px;
+  }
+  .log-out-welcome {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 /* New Task */
 
 .input-field {
@@ -282,8 +315,8 @@ h1 {
 
 .action-btn {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,6 +345,16 @@ h1 {
   flex-direction: column;
   margin-top: 10px;
 }
-/* Home view */
 
-/* Account View */
+/* Footer  */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.8rem;
+}

@@ -15,7 +15,7 @@
           <label class="input-field-label">E-mail</label>
           <input
             type="email"
-            class="input-field"
+            class="input-field-login"
             placeholder="example@gmail.com"
             id="email"
             v-model="email"
@@ -26,7 +26,7 @@
           <label class="input-field-label">Password</label>
           <input
             type="password"
-            class="input-field"
+            class="input-field-login"
             placeholder="**********"
             id="password"
             v-model="password"

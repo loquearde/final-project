@@ -6,17 +6,19 @@
         <router-link to="/" class="nav-link">Task Manager</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/account">Account</router-link>
+        <router-link class="nav-link" to="/account">Account</router-link>
       </li>
     </ul>
 
-    <div class="hide">
+    <div class="hide log-out">
       <ul>
         <li class="log-out-welcome">
           <p v-if="getUser">Welcome, {{ getUser.email }}</p>
         </li>
         <li>
-          <button @click="signOut" class="button">Log out</button>
+          <button @click="signOut" class="button log-out-button">
+            Log out
+          </button>
         </li>
       </ul>
     </div>
