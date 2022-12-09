@@ -38,4 +38,8 @@ Ayer avanzamos significativamente desarrollando la lógica de NewTask y TaskItem
 
 ## Jueves 8 de diciembre
 
-Ayer pude terminar el CSS de las páginas de Sign In y Sign Up (las hice juntas ya que compartían casi todos sus elementos). Hoy voy a comenzar el día trabajando en la barra de navegación y estimo que me llevará al menos toda la mañana.
+Ayer pude terminar el CSS de las páginas de Sign In y Sign Up (las hice juntas ya que compartían casi todos sus elementos). Hoy voy a comenzar el día trabajando en la barra de navegación y estimo que me llevará al menos toda la mañana. Acabo el día con el estilado de New Task y New Item completo.
+
+## Viernes 9 de diciembre
+
+Hoy voy a comenzar creando un footer y estilándolo para móvil. Una vez acabado esto, quiero empezar a trabajar en las media queries para que la web se visualice correctamente en desktop.
