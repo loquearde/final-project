@@ -1,6 +1,20 @@
 <template>
   <nav class="navbar">
     <router-link to="/" class="navbar-logo"></router-link>
+    <div class="toggle-menu">
+      <label for="toggle-menu-checkbox">
+        <img
+          src="../assets/images/hamburger-menu.png"
+          alt="hamburger menu"
+          class="burger-img"
+        />
+      </label>
+    </div>
+    <input
+      type="checkbox"
+      class="toggle-menu__checkbox"
+      id="toggle-menu-checkbox"
+    />
     <ul class="nav-menu">
       <li class="nav-item">
         <router-link to="/" class="nav-link">Task Manager</router-link>
