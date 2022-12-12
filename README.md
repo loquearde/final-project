@@ -45,3 +45,5 @@ Ayer pude terminar el CSS de las páginas de Sign In y Sign Up (las hice juntas 
 Hoy voy a comenzar creando un footer y estilándolo para móvil. Una vez acabado esto, quiero empezar a trabajar en las media queries para que la web se visualice correctamente en desktop. He podido acabar con la responsiveness. Dejo para la semana que viene el menú de hamburguesa.
 
 ## Lunes 12 de diciembre
+
+Hoy me centraré en el menú hamburguesa, ya que necesito rediseñarlo para que funcione usando un v-show.
