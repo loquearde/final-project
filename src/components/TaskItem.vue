@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container container-task">
     <h4
       class="insert"
       v-bind:class="task.is_complete ? 'completed' : 'not-completed'"
@@ -8,7 +8,7 @@
     </h4>
     <br />
     <p
-      class="insert"
+      class="insert description"
       v-bind:class="task.is_complete ? 'completed' : 'not-completed'"
     >
       {{ task.description }}

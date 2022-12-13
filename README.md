@@ -48,3 +48,8 @@ Hoy voy a comenzar creando un footer y estilándolo para móvil. Una vez acabado
 
 Hoy me centraré en el menú hamburguesa, ya que necesito rediseñarlo para que funcione usando un v-show.
 Para el menú hamburguesa, finalmente me he desviado del camino inicial que pensaba tomar y he decidido hacerlo puramente con CSS con la ayuda de un tutorial que me ha pasado un compañero.
+Y también he alcanzado a implementar una función para que las tareas completadas se sitúen al final de la lista.
+
+## Martes 13 de diciembre
+
+Hoy me gustaría centrarme en rematar el diseño y empezar a pensar en posibles nuevas funciones que se podrían implementar en la página.

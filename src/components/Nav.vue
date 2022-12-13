@@ -4,7 +4,7 @@
     <div class="toggle-menu">
       <label for="toggle-menu-checkbox">
         <img
-          src="../assets/images/hamburger-menu.png"
+          src="..//assets/images/hamburger-menu.png"
           alt="hamburger menu"
           class="burger-img"
         />

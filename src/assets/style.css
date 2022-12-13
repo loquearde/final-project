@@ -235,6 +235,14 @@ li {
 }
 /* New Task */
 
+.container-task {
+  background-color: #f7f7ff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 475px;
+  border-radius: 10px;
+}
+
 .input-field {
   background-color: #f2d0a4;
   display: flex;
@@ -268,8 +276,8 @@ h1 {
 /* Task Item */
 
 .insert {
-  background-color: #9e5c3d;
-  border: 0.75px;
+  /* background-color: #9e5c3d; */
+  background-color: #eeded7;
   padding: 10px;
   border-radius: 5px;
   width: 93%;
@@ -278,9 +286,15 @@ h1 {
   justify-content: center;
 }
 
+.description {
+  /* background-color: #b58b78; */
+  background-color: #eae2de;
+}
+
 .action-buttons {
   display: flex;
   flex-direction: row;
+  background-color: #f7f7ff;
 }
 
 .action-btn {
@@ -290,6 +304,7 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #f7f7ff;
   margin: 15px;
   border: none;
 }
