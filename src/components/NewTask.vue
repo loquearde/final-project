@@ -1,5 +1,6 @@
 <template>
   <h1>Add a new Task</h1>
+  <h3 class="date">And remember that today is {{ hoy }}</h3>
   <div v-if="showErrorMessage">
     <p class="error-text">{{ errorMessage }}</p>
   </div>
@@ -27,6 +28,7 @@
 <script setup>
 import { ref } from "vue";
 import { useTaskStore } from "../stores/task";
+import moment from "moment";
 
 const taskStore = useTaskStore();
 
@@ -35,6 +37,7 @@ const emit = defineEmits(["getTasksChild"]);
 // variables para los valors de los inputs
 const name = ref("");
 const description = ref("");
+const hoy = moment().format("dddd Do MMMM YYYY");
 
 // constant to save a variable that holds an initial false boolean value for the errorMessage container that is conditionally displayed depending if the input field is empty
 const showErrorMessage = ref(false);

@@ -235,6 +235,14 @@ li {
 }
 /* New Task */
 
+.date {
+  margin: 20px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #292932;
+}
+
 .container-task {
   background-color: #f7f7ff;
   padding: 20px;
@@ -305,7 +313,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f7f7ff;
-  margin: 15px;
+  margin: 15px 15px 0px 15px;
   border: none;
 }
 
