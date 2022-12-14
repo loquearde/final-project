@@ -329,6 +329,10 @@ h1 {
   background-image: url(./images/check-logo.png);
 }
 
+.incomplete-button {
+  background-image: url(./images/incomplete.png);
+}
+
 .save-button {
   background-image: url(./images/save-logo.png);
 }

@@ -25,7 +25,16 @@
         />
         <button class="action-btn save-button" @click="changeTask"></button>
       </div>
-      <button class="action-btn complete-button" @click="statusTask"></button>
+      <button
+        class="action-btn complete-button"
+        @click="statusTask"
+        v-if="!props.task.is_complete"
+      ></button>
+      <button
+        class="action-btn incomplete-button"
+        @click="statusTask"
+        v-if="props.task.is_complete"
+      ></button>
     </div>
   </div>
 </template>
@@ -65,18 +74,6 @@ const editTask = ref(false);
 const editTaskFunction = () => {
   editTask.value = !editTask.value;
 };
-
-// Función para archivar tasks
-
-// const isComplete = ref(props.task.is_complete);
-// const isCompleteFunction = () => {
-//   =.value = !isComplete.value;
-//   console.log(isComplete.value);
-// };
-
-// const changeStatus = async () => {
-//   await taskStore.changeStatus(props.task.id, isComplete.value);
-// };
 
 const statusTask = async () => {
   await taskStore.statusTask(!props.task.is_complete, props.task.id);

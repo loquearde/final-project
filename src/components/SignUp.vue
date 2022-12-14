@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div class="header-description">
-        <h3 class="header-title">Register to ToDo App</h3>
+        <h3 class="header-title">Register to You Did It! App</h3>
         <p class="header-subtitle">Start organizing your tasks!</p>
       </div>
     </div>
