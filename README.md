@@ -55,3 +55,5 @@ Y también he alcanzado a implementar una función para que las tareas completad
 Hoy me gustaría centrarme en rematar el diseño y empezar a pensar en posibles nuevas funciones que se podrían implementar en la página. Hoy he podido terminar con lo que me había propuesto: la página ya tiene su propio icono en el navegador, he incluido la task, description y botones dentro de una tarjeta para mayor claridad de lectura, he retocado algunos estilos y también he añadido la fecha usando moment js.
 
 ## Miércoles 14 de diciembre
+
+Para hoy, voy a trabajar en la Account section y también intentaré que el icono de completado se cambie al de descompletado.
