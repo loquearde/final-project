@@ -56,4 +56,8 @@ Hoy me gustaría centrarme en rematar el diseño y empezar a pensar en posibles 
 
 ## Miércoles 14 de diciembre
 
-Para hoy, voy a trabajar en la Account section y también intentaré que el icono de completado se cambie al de descompletado.
+Para hoy, voy a ver si consigo hacer algo con la Account section y también intentaré que el icono de completado se cambie al de descompletado.
+
+## Jueves 15 de diciembre
+
+Hoy tan solo quiero probar que todo funciona bien, probar algunos pequeños cambios y preparar la presentación para mañana.
