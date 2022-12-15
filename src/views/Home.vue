@@ -23,6 +23,7 @@ import NewTask from "../components/NewTask.vue";
 import TaskItem from "../components/TaskItem.vue";
 import Footer from "../components/Footer.vue";
 
+console.log("hello......");
 const taskStore = useTaskStore();
 
 // Variable para guardar las tareas de supabase

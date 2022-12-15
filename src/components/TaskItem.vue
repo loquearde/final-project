@@ -17,11 +17,17 @@
       <button class="action-btn trash-button" @click="deleteTask"></button>
       <button class="action-btn edit-button" @click="editTaskFunction"></button>
       <div class="edit" v-show="editTask">
-        <input type="text" placeholder="Change title" v-model="name" />
+        <input
+          type="text"
+          placeholder="Change title"
+          v-model="name"
+          class="edit-input"
+        />
         <input
           type="text"
           placeholder="Change description"
           v-model="description"
+          class="edit-input"
         />
         <button class="action-btn save-button" @click="changeTask"></button>
       </div>
