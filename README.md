@@ -1,26 +1,9 @@
-# [](https://github.com/zantonz/final-project/blob/master/README.md)ToDo App
+# [](https://github.com/loquearde/final-project)You Did It! App
 
-[Click para acceder a la web](https://todo-zantonz.vercel.app/)
+[Click para acceder a la web](https://final-project-ironhack-six.vercel.app/auth/login)
 
-Autor: Anton Zyrianov
-Fecha: 25/08/2022
-
-## Descripcion
-
-![Pagina Home](https://i.postimg.cc/m2rV83dV/Captura-de-pantalla-2022-08-25-a-las-10-38-46.png)
-
-Se trata del proyecto final realizado durante el bootcamp de Front End Development en el Ironhack que consiste en una pagina web que te permite gestionar tus tareas.
-
-Es una aplicacion creada con Vue.js que permite a usuarios crear una cuenta, añadir tareas a completar, editarlas, marcarlas como completadas y finalmente borrarlas. Nuestra pagina web esta vinculada a una base de datos, donde estaremos almacenando todos los datos de usuarios y las tareas. En este caso, para gestionarlo utilizaremos Supabase, que nos ofrece un subconjunto de funcionalidades de Back End que nos permite gestionarlo como un servicio.
-
-**El objetivo** de este proyecto es poner en practica los conocimientos de Vue.js obtenidos durante el curos y ademas poder conectarlo a una base de datos externa y gestionarla.
-
-## Tecnologias empleadas:
-
-- **Client:** Vue.js y Vite
-- **Router:** Vue Router
-- **Store:** Pinia y Pinia Persist para el Log In
-- **Database:** Supabase
+Autor: Javi Gómez Martínez
+Fecha: 16/12/2022
 
 # Trello del proyecto
 
@@ -61,3 +44,7 @@ Para hoy, voy a ver si consigo hacer algo con la Account section y también inte
 ## Jueves 15 de diciembre
 
 Hoy tan solo quiero probar que todo funciona bien, probar algunos pequeños cambios y preparar la presentación para mañana.
+
+## Viernes 16 de diciembre
+
+Hoy ya solo queda terminar de presentar la presentación, ayer pude solucionar con la ayuda de Diego un error de carga que tenía debido a un pequeño error en el Router y también solventar algunos pequeños errores de diseño de última hora. Listos para despegar.
